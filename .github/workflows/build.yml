@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Télécharger le code
         uses: actions/checkout@v4
@@ -18,11 +19,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Rendre Gradle exécutable
-        run: chmod +x gradlew
+      - name: Installer Gradle 8.2 manuellement
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.2'
 
       - name: Compiler l'APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Sauvegarder l'APK
         uses: actions/upload-artifact@v4
