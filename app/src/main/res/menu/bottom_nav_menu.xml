@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_shield"
+        android:title="Accueil"/>
+    <item
+        android:id="@+id/appsFragment"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Apps"/>
+    <item
+        android:id="@+id/scheduleFragment"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Plannings"/>
+    <item
+        android:id="@+id/statsFragment"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Stats"/>
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FocusGuard</string>
+    <string name="nav_home">Accueil</string>
+    <string name="nav_apps">Applications</string>
+    <string name="nav_schedule">Plannings</string>
+    <string name="nav_stats">Statistiques</string>
+</resources>

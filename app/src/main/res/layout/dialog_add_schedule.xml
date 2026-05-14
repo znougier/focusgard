@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/et_schedule_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom du planning"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:background="@color/bg_card2"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Début :"
+                android:textColor="@color/text_secondary"/>
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:00"
+                android:textColor="@color/accent_blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@color/bg_card2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fin :"
+                android:textColor="@color/text_secondary"/>
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00"
+                android:textColor="@color/accent_blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@color/bg_card2"/>
+        </LinearLayout>
+
+        <!-- Days checkboxes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jours :"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/cb_mon" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="L" android:textColor="@color/text_primary" android:checked="true"/>
+            <CheckBox android:id="@+id/cb_tue" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="M" android:textColor="@color/text_primary" android:checked="true"/>
+            <CheckBox android:id="@+id/cb_wed" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="M" android:textColor="@color/text_primary" android:checked="true"/>
+            <CheckBox android:id="@+id/cb_thu" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="J" android:textColor="@color/text_primary" android:checked="true"/>
+            <CheckBox android:id="@+id/cb_fri" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="V" android:textColor="@color/text_primary" android:checked="true"/>
+            <CheckBox android:id="@+id/cb_sat" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="S" android:textColor="@color/text_primary"/>
+            <CheckBox android:id="@+id/cb_sun" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="D" android:textColor="@color/text_primary"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_apply_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appliquer à toutes les apps bloquées"
+            android:textColor="@color/text_primary"
+            android:checked="true"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
